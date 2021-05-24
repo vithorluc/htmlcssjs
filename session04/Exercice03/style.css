@@ -1,0 +1,27 @@
+/* img {
+  width: 100%;
+} */
+
+@keyframes dashfront {
+    from {
+        stroke-dasharray: 1000;
+        stroke-dashoffset: 1000;
+    }
+
+    
+    to {
+        stroke-dasharray: 1000;
+        stroke-dashoffset: 0;
+    }
+}
+
+
+.st0 {
+  fill: none;
+  stroke: #ff9966;
+  stroke-width: 4;
+  stroke-miterlimit: 10;
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  animation: dashfront 5s linear infinite;
+}

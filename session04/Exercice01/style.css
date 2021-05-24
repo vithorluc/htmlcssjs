@@ -1,0 +1,60 @@
+@keyframes myBoxAmin {
+    0% {
+        background-color: blue;
+        width: 200px;
+        height: 200px;
+        border-radius: 0;
+    }
+    30% {background-color: red;
+        width: 400px;
+        height: 100px;
+        transform: translate(300px, 300px) rotate(0deg);
+        border-radius: 0;
+    }
+    70% {
+        background-color: purple;
+        width: 100px;
+        height: 100px;
+        transform: translate(0, 0) rotate(0deg);
+        border-radius: 50%;
+    }       
+    100% {
+        background-color: yellowgreen;
+        width: 400px;
+        height: 200px;
+        transform: translate(800px, 200px) rotate(360deg);
+    }
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+    width: 80%;
+    height: 550px;
+    display: table;
+    background-color: #cacaca;
+    margin: 100px auto;
+}
+
+.quadrado {
+    display: flex; 
+    width: 200px;
+    height: 200px;
+    background-color: blue;
+    transition: all 3s ease-in;
+    animation: myBoxAmin 3s infinite;
+    align-items: center;
+    justify-content: center;
+}
+
+.text p {
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
